@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  pg12:
+    image: postgres:12
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata12:/var/lib/postgresql/data
+      - ./src/main/resources/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_DB=library
+  tp3bibliotheque:
+    build: .
+    image: julianbourdes/tp3bibliotheque
+    ports:
+      - 8081:8081
+    links:
+      - "pg12:pg12"
+volumes:
+  pgdata12: {}
