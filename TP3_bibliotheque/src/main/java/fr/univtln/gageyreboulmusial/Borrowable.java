@@ -1,4 +1,4 @@
-package fr.univtln.bourdeszamora;
+package fr.univtln.gageyreboulmusial;
 
 /**
  * This interface is used to represent the transversal properties of the Book and Laptop classes
