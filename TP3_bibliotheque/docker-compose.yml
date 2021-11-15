@@ -11,9 +11,24 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=changeme
       - POSTGRES_DB=library
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+        PGADMIN_DEFAULT_EMAIL: postgres@local.int
+        PGADMIN_DEFAULT_PASSWORD: changeme
+        PG_DATABASE: transvar
+        PG_USER: postgres
+        PG_PASSWORD: changeme
+    volumes:
+        - ./docker/pgadmin:/root/.pgadmin
+    ports:
+        - 80:80
+    links:
+        - "pg12:pg12"
   tp3bibliotheque:
     build: .
-    image: julianbourdes/tp3bibliotheque
+    image: cimestro/tp3bibliotheque
     ports:
       - 8081:8081
     links:

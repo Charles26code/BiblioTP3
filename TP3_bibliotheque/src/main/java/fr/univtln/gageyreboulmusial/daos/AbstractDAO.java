@@ -61,7 +61,6 @@ public abstract class AbstractDAO<E extends Entity> implements fr.univtln.gageyr
         try {
             connection.createStatement().execute("DELETE FROM " + getTableName() + " WHERE ID=" + id);
         } catch (SQLException throwables) {
-            throw new DataAccessException(throwables.getLocalizedMessage());
         }
     }
 
@@ -69,7 +68,6 @@ public abstract class AbstractDAO<E extends Entity> implements fr.univtln.gageyr
         try {
             connection.createStatement().execute("DELETE FROM " + getTableName());
         } catch (SQLException throwables) {
-            throw new DataAccessException(throwables.getLocalizedMessage());
         }
     }
 
@@ -80,7 +78,6 @@ public abstract class AbstractDAO<E extends Entity> implements fr.univtln.gageyr
             ResultSet rs = findAllPS.executeQuery();
             while (rs.next()) entityList.add(fromResultSet(rs));
         } catch (SQLException e) {
-            throw new DataAccessException(e.getLocalizedMessage());
         }
         return entityList;
     }

@@ -80,71 +80,43 @@ public class App
 
             // Creation of a library
             Library l1 = libraryDAO.persist();
-            log.info("l1 persisted "+l1);
+            log.info("Donnée l1 Sent : "+l1);
 
             // Creation of a document
-            Document d1 = documentDAO.persist("Harry Potter - A l'école des sorciers", l1.getId());
-            log.info("d1 persisted "+d1);
+            Document d1 = documentDAO.persist("Albert Camus - L'étrangé", l1.getId());
+            log.info("Donnée d1 Sent : "+d1);
 
-            Magazine mag1 = magazineDAO.persist(42, "Voici - Le clash en Maeva Ghenam et Martine", l1.getId());
-            log.info("mag1 persisted "+mag1);
+            Document d2 = documentDAO.persist("Madame de la Fayette - La princesse de Clèves", l1.getId());
+            log.info("Donnée d2 Sent : "+d2);
+
+            Magazine mag1 = magazineDAO.persist(42, "PMU - Les plus gros gagnants de l'histoire", l1.getId());
+            log.info("Donnée m1 Sent : "+mag1);
+
+            Magazine mag2 = magazineDAO.persist(42, "Euromillions - Une fortune controversée", l1.getId());
+            log.info("Donnée m1 Sent : "+mag2);
+
 
             // Creation of 2 other document
             documentDAO.persist(Arrays.asList(
                     Document.documentBuilder()
-                            .title("Harry Potter et la Chambre des Secrets")
+                            .title("Moby Dick une oeuvre fascinante")
                             .idlibrary(l1.getId())
                             .build(),
                     Document.documentBuilder()
-                            .title("Harry Potter et le prisonnier d'Azkaban")
+                            .title("L'autobiographie de Nabila")
                             .idlibrary(l1.getId())
                             .build()
                 )
             );
-            log.info("Document list persisted !");
+            log.info("Document sent to database !");
 
-            // Reading of some documents by id with an missing one
             long[] ids = {
                     d1.getId(),
                     -1
             };
 
-//            // For each id, I look for the document in the table
-//            for(long id : ids) {
-//                // We use Optional because the result can be null
-//                Optional<Document> optionalDocument = documentDAO.find(id);
-//                log.info(
-//                        "Document " + id + " : " + (optionalDocument.isPresent()
-//                                ? optionalDocument.get()
-//                                : "NOT FOUND")
-//                );
-//            }
-
-            // Reading all documents in the table
             log.info(documentDAO.findAll().toString());
 
-//            // Updating of an document
-//            d1 = Document.builder()
-//                    .id(d1.getId())
-//                    .title("Harry Potter à l'école des sorciers")
-//                    .build();
-//
-//            documentDAO.update(d1);
-//            Optional<Document> optionalDocument = documentDAO.find(d1.getId());
-//            log.info(
-//                    "Document 1 MAJ : " + (optionalDocument.isPresent()
-//                            ? optionalDocument.get()
-//                            : "NOT FOUND")
-//            );
-//
-//            Volume v1 = volumeDAO.persist("J.K. Rowling", d1.getId());
-//            ComicBook cb1 = comicBookDAO.persist("James Cameron", v1.getId());
-
-            // Deleting a document by reference
-            //documentDAO.remove(d1);
-
-            // Deleting a document by id
-            //documentDAO.remove(3);
 
         }
         catch (DataAccessException throwables) {
@@ -153,13 +125,12 @@ public class App
 
         // Init API server
         final HttpServer server = startServer();
-        System.out.println(String.format("Jersey app started with WADL available at "
-                + "%sapplication.wadl\nHit enter to stop it...", App.getProperty("api.baseurl")));
+        System.out.println(String.format("Le serveur a bien démarré => Pour fermer la Base appuyez sur la touche entrée", App.getProperty("api.baseurl")));
 
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
-                log.info("Stopping server..");
+                log.info("Le serveur va s'arreter..");
                 server.shutdown();
             }
         }, "shutdownHook"));

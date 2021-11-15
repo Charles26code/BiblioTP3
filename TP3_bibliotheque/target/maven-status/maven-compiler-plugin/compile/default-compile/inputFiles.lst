@@ -1,33 +1,33 @@
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Magazine.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/LibraryDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/services/WSVolume.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Volume.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Document.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/MemberDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/exceptions/NotFoundException.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/VolumeDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/exceptions/MissingFileException.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/ComicBookDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/exceptions/DataAccessException.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Entity.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/MagazineDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/LaptopComputer.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/datasources/DBCPDataSource.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Dictionnary.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/Borrowable.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/services/WSDocument.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Member.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/BookDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/services/WS.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/App.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/ComicBook.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/DocumentDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/Test.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Book.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/LaptopComputerDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/MaterialDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/DAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/AbstractDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Material.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/daos/DictionnaryDAO.java
-/Users/julianbourdes/Documents/CNAM/Cours/Conception et développement/POO/I111/TP3_bibliotheque/src/main/java/fr/univtln/bourdeszamora/entities/Library.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\datasources\DBCPDataSource.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\MemberDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\LibraryDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\services\WSDocument.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\BookDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\exceptions\NotFoundException.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Book.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Entity.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\exceptions\DataAccessException.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Member.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Dictionnary.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\MagazineDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\LaptopComputer.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\MaterialDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\services\WS.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\App.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\services\WSVolume.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\Test.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Document.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\exceptions\MissingFileException.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\DictionnaryDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Volume.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Library.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\DAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\LaptopComputerDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Material.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\Borrowable.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\ComicBookDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\Magazine.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\entities\ComicBook.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\VolumeDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\AbstractDAO.java
+C:\Users\Hugo\OneDrive\Documents\GitHub\hellogit_cnam_a22021-cnam_a2_2021_all-master\BiblioTP3\TP3_bibliotheque\src\main\java\fr\univtln\gageyreboulmusial\daos\DocumentDAO.java

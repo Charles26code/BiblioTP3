@@ -1,4 +1,4 @@
-package fr.univtln.bourdeszamora;
+package fr.univtln.gageyreboulmusial;
 
 import static org.junit.Assert.assertTrue;
 
