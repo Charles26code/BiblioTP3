@@ -1,0 +1,37 @@
+version: "3.8"
+services:
+  pg12:
+    image: postgres:12
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata12:/var/lib/postgresql/data
+      - ./src/main/resources/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_DB=library
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+        PGADMIN_DEFAULT_EMAIL: postgres@local.int
+        PGADMIN_DEFAULT_PASSWORD: changeme
+        PG_DATABASE: transvar
+        PG_USER: postgres
+        PG_PASSWORD: changeme
+    volumes:
+        - ./docker/pgadmin:/root/.pgadmin
+    ports:
+        - 80:80
+    links:
+        - "pg12:pg12"
+  tp3bibliotheque:
+    build: .
+    image: cimestro/tp3bibliotheque
+    ports:
+      - 8081:8081
+    links:
+      - "pg12:pg12"
+volumes:
+  pgdata12: {}
