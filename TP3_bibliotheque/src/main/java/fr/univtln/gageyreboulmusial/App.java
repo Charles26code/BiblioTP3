@@ -17,10 +17,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Properties;
 
-/**
- * Hello world!
- *
- */
+
 @Log
 public class App 
 {
