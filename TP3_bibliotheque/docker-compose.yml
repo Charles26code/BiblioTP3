@@ -28,7 +28,7 @@ services:
         - "pg12:pg12"
   tp3bibliotheque:
     build: .
-    image: cimestro/tp3bibliotheque
+    image: charlesmusial/tp3bibliotheque
     ports:
       - 8081:8081
     links:
